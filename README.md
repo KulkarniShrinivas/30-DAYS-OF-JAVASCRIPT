@@ -1,4 +1,4 @@
-# 30-DAYS-OF-JAVASCRIPT
+# 30-DAYS-OF-JAVASCRIPT.
 
 # Fullstack_Opensource
 
