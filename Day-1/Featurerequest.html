@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.Variable Types Console Log: Write a script that declares of diffrent datatypes and logs both the value and types of each vaiable to the console
+
+        let num = 10;
+        console.log(num);
+        console.log(typeof num);
+
+        let str = "Hello";
+        console.log(str);
+        console.log(typeof str);
+
+        let boolean = true;
+        console.log(boolean);
+        console.log(typeof boolean);
+
+        let obj = {name: "John", age: 25};
+        console.log(obj);
+        console.log(typeof obj);
+
+        let arr = [1,2,3,4,5];
+        console.log(arr);
+        console.log(typeof arr);
+
+        //2. Reassignment Demo: Create a script that demonstrates the diffrence in behaviour between let and const when it comes to reassigment 
+
+        let num1 = 10;
+        console.log(num1);
+
+        num1 = 20;
+        console.log(num1);
+
+        //output=> 10, 20
+
+        const num2 = 10;
+        console.log(num2);
+
+        num2 = 20;
+
+        //output=> TypeError: Assignment to constant variable.
+
+    </script>
+</body>
+</html>
