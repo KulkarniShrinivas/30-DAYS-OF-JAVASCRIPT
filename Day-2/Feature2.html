@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Comparison and Logical Operators Script: script that Compares two numbers using diffrent comparison operators and combines conditions using logical operators. log the result to the console.
+
+        
+        window.alert("Comparing num1=10 and num2=20 using different comparison operators and combining conditions using logical operators");
+        let num1= 10;
+        let num2= 20;
+
+        let result = prompt("Enter the comparison operator: 1. > 2. < 3. >= 4. <= 5. == 6. ===");
+
+        result = parseInt(result);
+
+        switch(result){
+            case 1: 
+                console.log(num1 > num2);
+                break;
+            case 2:
+                console.log(num1 < num2);
+                break;
+            case 3:
+                console.log(num1 >= num2);
+                break;
+            case 4:
+                console.log(num1 <= num2);
+                break;
+            case 5:
+                console.log(num1 == num2);
+                break;
+            case 6:
+                console.log(num1 === num2);
+                break;
+            default:
+                console.log("Invalid choice");
+        }
+
+        //using logical operators
+        let result1 = prompt("Enter the logical operator: 1. && 2. || 3. !");
+
+        result1 = parseInt(result1);
+
+        switch(result1){
+            case 1:
+                console.log(num1 > 5 && num2 < 30);
+                break;
+            case 2:
+                console.log(num1 > 5 || num2 < 30);
+                break;
+            case 3:
+                console.log(!(num1 > 5));
+                break;
+            default:
+                console.log("Invalid choice");
+        }
+
+        
+    </script>
+</body>
+</html>

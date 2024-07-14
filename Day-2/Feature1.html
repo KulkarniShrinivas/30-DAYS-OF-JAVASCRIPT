@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Script that performs basic arithmatic operations on two numbers and log result to the console
+
+        let num1 = 10;
+        let num2 = 20;
+
+        let choice = parseInt(prompt("Enter your choice: 1. Addition 2. Subtraction 3. Multiplication 4. Division"));
+
+        choice = parseInt(choice);
+
+        switch(choice){
+            case 1:
+                console.log(num1 + num2);
+                break;
+            case 2:
+                console.log(num1 - num2);
+                break;
+            case 3:
+                console.log(num1 * num2);
+                break;
+            case 4:
+                console.log(num1 / num2);
+                break;
+            default:
+                console.log("Invalid choice");
+        }
+    </script>
+</body>
+</html>
