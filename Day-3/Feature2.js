@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         //Voting eligiblity script: Create a script to check if a person is eligible to vte based on their age and log the result to the console
 
         let age = prompt("Enter your age: ");
@@ -18,6 +10,4 @@
         else{
             console.log("You are not eligible to vote");
         }
-    </script>
-</body>
-</html>
+  

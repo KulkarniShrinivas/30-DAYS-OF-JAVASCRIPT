@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         //program to check if a number is positive or zero and log the result to the console
 
         let num = prompt("Enter a number: ");
@@ -33,6 +25,4 @@
         else{
             console.log("You are not eligible to vote");
         }
-    </script>
-</body>
-</html>
+    

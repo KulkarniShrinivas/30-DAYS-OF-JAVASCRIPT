@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
     //program to check if a year is a leap year using multiple conditions and log the result to the console
     
     let year = prompt("Enter a year:");
@@ -25,7 +17,3 @@
         
         }
     }
-    
-    </script>
-</body>
-</html>

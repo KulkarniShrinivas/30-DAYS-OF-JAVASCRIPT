@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         //program to find the largest of three numbers using nested if else statments
 
         let num1= 20;
@@ -28,6 +20,4 @@
             }
             
         }
-    </script>
-</body>
-</html>
+  

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         //write a program that uses the ternary operator to check if a number is evem or odd and log the result to the console
 
         let num = prompt("Enter a number: ");
@@ -17,6 +9,4 @@
         console.log("The number is: " + result);
 
         
-    </script>
-</body>
-</html>
+   

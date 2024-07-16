@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         //program that uses a switch case to determine the day of the week based on number(1-7) and log the day name to the console
 
         let day = prompt("Enter a number between 1-7: ");
@@ -63,7 +55,3 @@
                 console.log("Invalid choice");
                 
         }
-
-    </script>
-</body>
-</html>

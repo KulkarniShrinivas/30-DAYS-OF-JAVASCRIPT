@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         //feature 3 and 4 are alredy covered in the loops
 
         // Leap year check script: script thar checks if a leap year using multiple conditions and logs the result
@@ -19,6 +11,4 @@
         } else{
             console.log("The year is not a leap year");
         }
-    </script>
-</body>
-</html>
+   
