@@ -2,7 +2,7 @@
 let num3 = 5;
 let num2 = 10;
 
-let max = function(num1, num2) {
+var max = function(num1, num2) {
     if (num1 > num2) {
         console.log("The maximum number is " + num1);
     } else {
