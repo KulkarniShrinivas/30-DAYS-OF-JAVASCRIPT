@@ -1,7 +1,7 @@
-// Corrected code for ArrayMethods.js
+
 
 // Use the push method to add a new number to the end of the array and log the updated array
-let num1 = [1, 2, 3, 4, 5];
+let num8 = [1, 2, 3, 4, 5];
 num1.push(6); 
 console.log(num1); 
 
