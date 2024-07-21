@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    <button id="btn">Click Me</button>
+
+    <h1 class="heading">Hello World</h1>
+
+    <script>
+        //selecting an Html Element by its Id and change its content
+        document.getElementById('heading').innerHTML = 'Hello World from JavaScript';
+
+        //selecting an HTML element by its class and change its background color
+
+        document.getElementsByClassName('heading')[0].style.backgroundColor = 'red';
+    </script>
+</body>
+</html>

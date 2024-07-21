@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <script>
+        //Create a new div element with some text content and apped it to the bodg
+
+        const newDiv = document.createElement('div');
+        newDiv.textContent = 'Hello World';
+        document.body.appendChild(newDiv);
+
+        //Create a new li element and add it to an existing ul list
+        const newLi = document.createElement('li');
+        newLi.textContent = 'Services';
+        document.querySelector('ul').appendChild(newLi);
+
+        //querySelectorAll used for: selecting all the elements with the same class name
+        
+
+    </script>
+</body>
+</html>
