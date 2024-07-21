@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .para {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <h1>Modifing Attributes and classes</h1>
+    <img src="https://source.unsplash.com/200x200" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    <button class="para">Click Me</button>
+
+  
+    <script>
+        //select an HTML element and change one of its attributes(eg sec of an img tag).
+
+        if (document.querySelector('img').hasAttribute('src')) {
+            document.querySelector('img').setAttribute('src', 'https://source.unsplash.com/400x400');
+        }
+
+        //Add and remove a css class to/form an HTML element
+
+    const btn = document.querySelector('button');
+    btn.addEventListener('click', () => {
+    const p = document.querySelector('p');
+   
+    if (p.classList.contains('para')) {
+        p.classList.remove('para');
+    } else {
+        p.classList.add('para');
+    }
+});
+
+       
+    </script>
+</body>
+</html>

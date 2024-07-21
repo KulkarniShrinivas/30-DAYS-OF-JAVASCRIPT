@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        color: red;
+    }
+    #para{
+        color: blue;
+    }
+    #btn{
+        background-color: green;
+        color: white;
+    }
+</style>
+<body>
+
+    <h1 id="heading">Hello</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    <button id="btn">Click Me</button>
+
+
+    
+
+    <script>
+        //Add click event listner to the button that changes the text content of a paragraph
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+        const para = document.getElementById('para');
+        para.textContent = 'Text content changed';
+    });
+
+
+    //add a mouseover event listner to an element that changes its border color
+
+    const heading = document.getElementById('heading');
+        heading.addEventListener('mouseover', () => {
+            heading.style.borderColor = 'green'; // Now the change will be visible
+        });
+
+
+         
+
+    </script>
+</body>
+</html>
