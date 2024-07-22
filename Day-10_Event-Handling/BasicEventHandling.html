@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    <button id="btn">Click Me</button>
+    <img src="https://source.unsplash.com/random" alt="random image" id="img" style="width: 200px; height: 200px;">
+
+
+
+    
+    <script>
+
+        //add a click event listner to a button that changes the text of a paragraph
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            const para = document.getElementById('para');
+            para.textContent = 'Text content changed';
+        });
+
+        //Add double-click event listner to an image that toggles its visiblity
+
+        const img = document.getElementById('img');
+        img.addEventListener('dblclick', () => {
+            if(img.style.display === 'none'){
+                img.style.display = 'block';
+            }else{
+                img.style.display = 'none';
+            }
+        });
+
+
+        
+        
+
+    </script>
+</body>
+</html>
