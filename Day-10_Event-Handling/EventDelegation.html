@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        li:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+ 
+   
+    
+
+    <script>
+
+        //Add a click Event Listner to a list that logs the text content of the clicked list item using event delegation
+
+        const list = document.getElementById('list');
+        list.addEventListener('click', (event) => {
+            if(event.target.tagName === 'LI'){
+                console.log(event.target.textContent);
+            }
+        })
+
+        //Add event listner too a parent element that listnes for events from dynamically added child elements
+
+        const ul = document.getElementById('list');
+const li = document.createElement('li');
+li.textContent = 'Item 6';
+ul.appendChild(li);
+
+    </script>
+</body>
+</html>
