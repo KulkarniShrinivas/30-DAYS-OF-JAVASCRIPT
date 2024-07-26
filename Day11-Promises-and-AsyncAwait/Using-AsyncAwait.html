@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a promise that resolves with a message after a 2-second timeout and the message to the console
+        async function AsyncFunction() {
+            const promise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve('Promise is resolved');
+                }, 2000);
+            });
+
+            const result = await promise;
+            console.log(result);
+        }
+
+        AsyncFunction();
+
+        //Write an async function that handles a rejected promise using try catch and log the error Message
+        async function myAsyncFunction() {
+            const promise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    reject('Promise is rejected');
+                }, 2000);
+            });
+
+            try {
+                const result = await promise;
+                console.log(result);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        myAsyncFunction();
+       
+    </script>
+</body>
+</html>
