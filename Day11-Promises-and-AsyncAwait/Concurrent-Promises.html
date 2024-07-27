@@ -7,27 +7,24 @@
 </head>
 <body>
     <script>
-
-        //use Promise.all to wait for multiple promises to resolve and then log their values
-
-        const promise1 = new Promise((resolve, rejct) =>{
+        // Use Promise.all to wait for multiple promises to resolve and then log their values
+        const promise1 = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve('Promise 1 is resolved');
             }, 2000);
-            });
+        });
 
-        const promise2 = new Promise((resolve, rejct) =>{
+        const promise2 = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve('Promise 2 is resolved');
             }, 2000);
-            });
-        
-        Promise.all([promise1, promise2]).then((values) => {
-            console.log(values);
         });
 
-        //Use promise.race to log the value of the first promise that resolves amoung multiple promises
+        Promise.all([promise1, promise2]).then((values) => {
+            console.log(values); // Logs: ["Promise 1 is resolved", "Promise 2 is resolved"]
+        });
 
+        // Use Promise.race to log the value of the first promise that resolves among multiple promises
         const promise3 = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve('Promise 3 is resolved');
@@ -40,15 +37,9 @@
             }, 2000);
         });
 
-        Promise
-
-        Promise
-
-
-
-
-        
-
+        Promise.race([promise3, promise4]).then((value) => {
+            console.log(value); // Logs: "Promise 3 is resolved" or "Promise 4 is resolved"
+        });
     </script>
 </body>
 </html>
