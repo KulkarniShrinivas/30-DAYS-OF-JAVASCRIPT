@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        //write a function that validates user input(e.g checking if a string is not empty) and
+        //throws a custom error if the validation fails. Handle the custo error using try-catch block
+
+
+        class ValidateError extends Error{
+            constructor(message){
+                super(message);
+                this.name = 'ValidateError';
+            }
+        }
+
+        function validateInput(input){
+            if(input === ''){
+                throw new ValidateError('Input cannot be empty');
+            }
+
+            try{
+                console.log('Input is valid');
+            }
+            catch(error){
+                if(error instanceof ValidateError){
+                    console.log(`Caught a custom error: ${error.message}`);
+                }
+                else{
+                    console.log(`Caught an unexpected error: ${error.message}`);
+                }
+
+            }
+
+            finally{
+                console.log('Validation complete');
+            }
+        }
+    </script>
+</body>
+</html>
