@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Use the fetch api to get data from a public api and og the response data to the console using promise
+
+        const url = 'https://jsonplaceholder.typicode.com/posts';
+
+        const fetchData = fetch(url);
+
+        fetchData.then((response) => {
+            return response.json();
+        }).then((data) => {
+            console.log(data);
+        }).catch((error) => {
+            console.log(error);
+        });
+
+
+        //Use the fetch API to get data from a public API and log the response data to the console using Async/Await
+
+        const url2 = 'https://jsonplaceholder.typicode.com/posts';
+
+        const fetchData2 = async () => {
+            const response = await fetch(url2);
+            const data = await response.json();
+            console.log(data);
+        }
+
+        fetchData2();
+
+    </script>
+</body>
+</html>
