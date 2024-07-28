@@ -5,25 +5,6 @@
     "version": "0.2.0",
     "configurations": [
 
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Open index.html",
-            "file": "/media/kulkarnishrinivas/New Volume/2024-Projects/30-DAYS-OF-JAVASCRIPT/Day-4/index.html"
-        },
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Open ForLoop.html",
-            "file": "/media/kulkarnishrinivas/New Volume/2024-Projects/30-DAYS-OF-JAVASCRIPT/Day-4/ForLoop.html"
-        },
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Open DoWhileLoop.html",
-            "file": "/media/kulkarnishrinivas/New Volume/2024-Projects/30-DAYS-OF-JAVASCRIPT/Day-4/DoWhileLoop.html"
-        },
-
         
 
         {

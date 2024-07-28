@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
 
         //write a function that intentionally throws an error and use a try-catch blcok to handle the error and log 
         //and log the error message to the console
@@ -39,6 +30,4 @@
         }
 
         Numbers(10,0);
-    </script>
-</body>
-</html>
+ 

@@ -22,19 +22,26 @@
         //Use try catch within an async function to handle error from promise that randomly resolves 
         //or rejects, and log the error message.
 
-        async function Function(){
-            try{
-                const message= await promise;
+        const promise2 = new Promise((resolve, reject) => {
+            const random = Math.random();
+            if (random > 0.5) {
+                resolve('Promise resolved successfully');
+            } else {
+                reject('Promise rejected with an error');
+            }
+        });
+
+        // Async function to handle the promise
+        async function handlePromise() {
+            try {
+                const message = await promise;
                 console.log(message);
-
+            } catch (error) {
+                console.log(`Caught an error: ${error}`);
             }
-            catch(error){
-                console.log(error);
-            }
-
-
         }
 
+        // Call the async function
+        handlePromise();
 
-        Function();
-
+        
